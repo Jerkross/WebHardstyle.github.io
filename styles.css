@@ -32,7 +32,7 @@ header:hover {
 
 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #503a1e; /* Color del texto */
+    color: #503a1e; 
     padding: 0.5em; /* Reducir el padding para dispositivos móviles */
     border-radius: 0.5em; /* Redondear los bordes */
     text-align: center;
@@ -46,7 +46,7 @@ h2:hover {
 
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #020202; /* Color del texto */
+    color: #020202; 
     padding: 1em; /* Aumentar el padding para dispositivos móviles */
     border-radius: 1em; /* Redondear los bordes */
     text-align: center;
@@ -97,7 +97,7 @@ ul li {
 }
 
 nav {
-    flex: 1; /* El menú de navegación ocupa todo el espacio restante */
+    flex: 1; 
 }
 
 nav ul {
