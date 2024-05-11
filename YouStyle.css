@@ -2,10 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*height: 100%; /* Ajusta la altura según sea necesario */
 }
 
 .video-wrapper {
-    max-width: 800px; /* Ajusta el ancho máximo del video */
+    max-width: 800px;
     width: 100%;
 }
