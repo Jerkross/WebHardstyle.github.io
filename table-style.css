@@ -1,0 +1,41 @@
+.top-artists-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Ajusta la opacidad del fondo */
+}
+
+.top-artists-table th, .top-artists-table td {
+    padding: 12px 15px;
+    border: 1px solid #020101;
+}
+
+.top-artists-table th {
+    background-color: #2879a8;
+    font-weight: bold;
+    text-align: left;
+}
+
+.top-artists-table tbody tr:nth-child(even) {
+    background-color: #914dc9;
+}
+
+.top-artists-table tbody tr:hover {
+    background-color: #ac4343;
+}
+
+.top-artists-table th, .top-artists-table td {
+    border-radius: 5px;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+h2 {
+    margin-top: 30px;
+}
+
+/* Estilos para hacer la tabla más responsiva en dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .top-artists-table th, .top-artists-table td {
+        padding: 8px 10px;
+    }
+}

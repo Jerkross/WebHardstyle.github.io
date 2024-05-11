@@ -1,0 +1,283 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background: linear-gradient(135deg, #1451a0, #d31665);
+    color: #000000;
+    padding: 10px; /* Reducir el padding para dispositivos móviles */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 20px; /* Redondear los bordes */
+}
+
+/* Cambia el color de fondo del header al pasar el mouse sobre él */
+header:hover {
+    background: linear-gradient(135deg, #450869, #183ebd);
+}
+
+.logo-container {
+    flex: 1; /* El logotipo ocupa todo el espacio restante */
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #503a1e; /* Color del texto */
+    padding: 0.5em; /* Reducir el padding para dispositivos móviles */
+    border-radius: 0.5em; /* Redondear los bordes */
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1493, 0 0 30px #FF1493, 0 0 40px #FF1493, 0 0 55px #FF1493, 0 0 75px #FF1493;
+}
+
+h2:hover {
+    color: #b30000;
+    background: linear-gradient(135deg, #450869, #183ebd);
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #020202; /* Color del texto */
+    padding: 1em; /* Aumentar el padding para dispositivos móviles */
+    border-radius: 1em; /* Redondear los bordes */
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0b2ce6, 0 0 30px #581be7, 0 0 40px #14ffc4, 0 0 55px #000000, 0 0 75px #FF1493;
+}
+
+@keyframes neon {
+    0% {
+        color: #2c42c0; /* Color inicial */
+    }
+    50% {
+        color: #c03b3b; /* Color intermedio */
+    }
+    100% {
+        color: #00ff00; /* Color final */
+    }
+}
+
+h1.neon-text {
+    animation: neon 2s infinite alternate; /* Animación de cambio de color */
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 1em; /* Tamaño de fuente relativo */
+    line-height: 1.6;
+    margin: 1em 0; /* Márgenes relativos */
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.5em; /* Redondear los bordes */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-family: Arial, sans-serif;
+    font-size: 1em; /* Tamaño de fuente relativo */
+    line-height: 1.6;
+    margin: 1em 0; /* Márgenes relativos */
+    padding: 1em;
+    background-color: rgba(201, 32, 164, 0.7);
+    border-radius: 0.5em; /* Redondear los bordes */
+    text-align: center;
+    display: flex;
+}
+
+nav {
+    flex: 1; /* El menú de navegación ocupa todo el espacio restante */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em; /* Márgenes relativos */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilización para los labels */
+label {
+    display: center; /* Hace que los labels ocupen todo el ancho disponible */
+    margin-bottom: 0.5em; /* Agrega espacio entre cada label y el elemento siguiente */
+    font-weight: bold; /* Hace que el texto del label sea negrita */
+    color: #000000; /* Color del texto del label */
+}
+
+/* Estilos para los inputs y select */
+#registro-formulario .input-field,
+#registro-formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #b1d5f1;
+}
+
+/* Estilos para los inputs y select en estado de foco */
+#registro-formulario .input-field:focus,
+#registro-formulario select:focus {
+    border-color: #ff0000;
+    background-color:rgba(216, 207, 207, 0.8);
+    outline: none;
+}
+
+
+main {
+    padding: 1em; /* Aumentar el padding para dispositivos móviles */
+    
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.centro-horizontal {
+    text-align: center;
+}
+
+.reproductor-centrado {
+    display: inline-block;
+}
+
+.formulario-contacto {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 1em; /* Redondear los bordes */
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1); /* Sombra con transparencia */
+    margin-bottom: 1em; /* Márgenes relativos */
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em; /* Márgenes relativos */
+    border: 1px solid #ccc;
+    border-radius: 0.5em; /* Redondear los bordes */
+    font-size: 1em; /* Tamaño de fuente relativo */
+    box-sizing: border-box;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em; /* Márgenes relativos */
+    border: 1px solid #ccc;
+    border-radius: 0.5em; /* Redondear los bordes */
+    font-size: 1em; /* Tamaño de fuente relativo */
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 1em 2em; /* Aumentar el padding para dispositivos móviles */
+    border-radius: 0.5em; /* Redondear los bordes */
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    text-align: center;
+    max-width: 100%; /* Ajustar al ancho máximo del viewport */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1em; /* Añadir espacio en los bordes para dispositivos móviles */
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+    position: relative;
+}
+
+.back-button,
+.term-button {
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    border: none;
+    padding: 1em 2em; /* Aumentar el padding para dispositivos móviles */
+    border-radius: 0.5em; /* Redondear los bordes */
+    font-size: 1em; /* Tamaño de fuente relativo */
+    cursor: pointer;
+}
+
+.back-button:hover,
+.term-button:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+.gif-container {
+    display: inline-block;
+    margin-left: 1em; /* Márgenes relativos */
+}
+
+.gif-container img {
+    width: 3em; /* Tamaño de la imagen relativo */
+    height: auto;
+    flex: 1; /* El contenedor de gif ocupa todo el espacio restante */
+    text-align: right; /* Alinea el gif a la derecha */
+}
+
+@media (max-width: 768px) {
+    /* Estilos específicos para dispositivos móviles */
+    header {
+        padding: 0.5em; /* Reducir el padding */
+    }
+
+    h2,
+    h1 {
+        padding: 0.5em; /* Reducir el padding */
+        font-size: 0.8em; /* Reducir el tamaño de la fuente */
+    }
+
+    p,
+    ul li {
+        padding: 0.5em; /* Reducir el padding */
+        font-size: 0.9em; /* Reducir el tamaño de la fuente */
+    }
+
+    .back-button,
+    .term-button {
+        padding: 0.5em 1em; /* Reducir el padding */
+        font-size: 0.9em; /* Reducir el tamaño de la fuente */
+    }
+
+    .gif-container img {
+        width: 2em; /* Reducir el tamaño de la imagen */
+    }
+}

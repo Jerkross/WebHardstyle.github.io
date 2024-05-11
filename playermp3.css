@@ -1,0 +1,10 @@
+.radio-section {
+    margin-top: auto; /* Ajusta el margen superior según sea necesario */
+    max-width: center;
+    
+}
+
+.radio-container {
+    max-width: auto; /* Ajusta el ancho máximo del contenedor de la radio */
+    margin: auto; /* Centra el contenedor horizontalmente */
+}

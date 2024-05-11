@@ -1,0 +1,49 @@
+.imagen-destacada {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    text-align: center; /* Centrar la imagen */
+    margin-top: 80px; /* Agregar un margen superior */
+}
+
+.imagen-destacada img {
+    filter: drop-shadow(5px 1px 1px rgb(11, 131, 230));
+    max-width: 100%; /* Asegurarse de que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    border-radius: 10px; /* Ajusta el radio de los bordes para que tengan un aspecto más suave */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), /* Sombra roja */
+                0 0 20px rgba(255, 0, 0, 0.5), /* Sombra roja */
+                0 0 40px rgba(255, 0, 0, 0.5), /* Sombra roja */
+                0 0 80px rgba(255, 0, 0, 0.5); /* Sombra roja */
+    animation: neon-border 1.5s infinite alternate; /* Animación de borde neón */
+}
+
+.imag-site {
+    text-align: center; /* Centrar las imágenes */
+}
+
+.imag-site img {
+    max-width: 45%; /* Asegurarse de que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    border-radius: 10px; /* Ajusta el radio de los bordes para que tengan un aspecto más suave */
+    box-shadow: 0 0 10px rgba(132, 0, 255, 0.5), /* Sombra roja */
+                0 0 20px rgba(255, 0, 191, 0.5), /* Sombra roja */
+                0 0 40px rgba(255, 174, 0, 0.5), /* Sombra roja */
+                0 0 80px rgba(76, 0, 255, 0.5); /* Sombra roja */
+    animation: neon-border 1.5s infinite alternate; /* Animación de borde neón */
+    margin: 10px; /* Añadir un espacio entre las imágenes */
+}
+
+/* Animación para el efecto de borde neón */
+@keyframes neon-border {
+    from {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), /* Sombra roja */
+                    0 0 20px rgba(255, 0, 0, 0.5), /* Sombra roja */
+                    0 0 40px rgba(255, 0, 0, 0.5), /* Sombra roja */
+                    0 0 80px rgba(255, 0, 0, 0.5); /* Sombra roja */
+    }
+    to {
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.9), /* Sombra roja más intensa */
+                    0 0 30px rgba(255, 0, 0, 0.9), /* Sombra roja más intensa */
+                    0 0 60px rgba(255, 0, 0, 0.9), /* Sombra roja más intensa */
+                    0 0 120px rgba(255, 0, 0, 0.9); /* Sombra roja más intensa */
+    }
+}
