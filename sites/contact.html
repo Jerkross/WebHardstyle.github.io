@@ -18,12 +18,8 @@
                 <li><a href="/sites/history.html">Historia</a></li>
                 <li><a href="/sites/topartist.html">Top 20 Artistas</a></li>
                 <li><a href="/sites/suscribe.html">Suscripción</a></li>
-                <!-- Agrega más enlaces a otras páginas aquí si es necesario -->
             </ul>
         </nav>
-        <div class="gif-container">
-            <img src="/images/iconmove.gif" alt="Descripción del GIF">
-        </div>
     </header>
 
     <main>
@@ -38,44 +34,43 @@
             <form id="formulario" onsubmit="enviarFormulario(event)">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" class="input-field" required>
-        
+
                 <label for="correo">Correo Electrónico:</label>
                 <input type="email" id="correo" name="correo" class="input-field" required>
-        
+
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" class="input-field" rows="4" required></textarea>
-        
+
                 <button type="submit" class="submit-button">Enviar</button>
             </form>
         </section>
-        
+
         <script>
             function enviarFormulario(event) {
-                event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
-        
+                event.preventDefault();
+
                 var nombre = document.getElementById("nombre").value;
                 var correo = document.getElementById("correo").value;
                 var mensaje = document.getElementById("mensaje").value;
-        
+
                 if (nombre === "" || correo === "" || mensaje === "") {
                     alert("Por favor complete todos los campos del formulario.");
-                    return false; // Evita que se envíe el formulario si falta algún campo
+                    return false;
                 }
-        
-                // Muestra un mensaje de procesamiento antes de enviar el formulario
+
                 alert("Estamos procesando tu mensaje, nos pondremos en contacto contigo.");
-        
-                // Redirige a la página de inicio después de que se cierre la ventana emergente
-                setTimeout(function() {
+
+
+                setTimeout(function () {
                     alert("Mensaje enviado con éxito. Nos pondremos en contacto contigo.");
                     window.location.href = "../index.html";
-                }, 1000); // Cambia 1000 a la cantidad de milisegundos que deseas esperar antes de redirigir (en este caso, 1 segundo)
+                }, 1000);
             }
         </script>
-        
-        
-        
-        
+
+
+
+
 
     </main>
     <footer>

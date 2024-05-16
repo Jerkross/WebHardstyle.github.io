@@ -10,9 +10,6 @@
 </head>
 
 <body>
-    <div class="gif-container">
-        <img src="/images/iconmove.gif" alt="Descripción del GIF">
-    </div>
     <div class="container">
         <div class="button-container">
             <button onclick="window.location.href = '../index.html'" class="back-button">Volver al inicio</button>
@@ -49,18 +46,18 @@
             var usuario = document.getElementById("usuario").value;
             if (nombre === "" || correo === "" || usuario === "") {
                 alert("Por favor complete todos los campos del formulario.");
-                return false; // Evita que se envíe el formulario si falta algún campo
+                return false;
             }
 
-            // Mostrar un mensaje de éxito
+
             alert("Suscripción exitosa! Comenzarás a recibir noticias!");
 
-            // Redirigir a la página de inicio después de que el usuario acepta el mensaje de éxito
+
             setTimeout(function () {
                 window.location.href = "../index.html";
-            }, 0); // Redirige después de que el mensaje de éxito se cierre
+            }, 0);
 
-            return true; // Envía el formulario si todos los campos están completos
+            return true;
         }
     </script>
 </body>

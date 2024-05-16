@@ -1,0 +1,26 @@
+body{
+    background-image: url(images/iconmove.gif);
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.contador {
+    color: fuchsia;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    animation: countdown 10s linear forwards;
+}
+
+@keyframes countdown {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
